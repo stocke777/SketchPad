@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+    <div style = "display: flex;">
+        <canvas id="canvas"></canvas>
+        <div class="colors">
+            <button class = "colbutton" style = "background-color: black;" onclick = "updatecolor(0);"></button>
+            <button class = "colbutton" style = "background-color: red;" onclick="updatecolor(1);"></button>
+            <button class = "colbutton" style = "background-color: yellow;" onclick="updatecolor(2);"></button>
+            <button class = "colbutton" style = "background-color: green;" onclick="updatecolor(3);"></button>
+            <button class = "colbutton" style = "background-color: blue;" onclick="updatecolor(4);"></button>
+        </div>
+        <div class="side">
+            <div class = "widthrange">
+                <input type="text" style = "width: 50px; height: 50px; background-color: black; border-radius: 50%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; color: white;" id="textwidth" value="16">
+                <div class="slider">
+                    <input type="range" id="myRange" min="2" max="30" onchange="updatewidth(this.value);">
+                </div>
+            </div>
+
+            <div class="shapes">
+                <span class = "circleicon" onclick="drawshape(1)"></span>
+                <span class = "triangleicon" onclick="drawshape(2)"></span>
+                <span class = "squareicon" onclick="drawshape(3)"></span>
+                <span class = "rectangleicon" onclick="drawshape(4)"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js" async defer></script>
+    </body>
+</html>

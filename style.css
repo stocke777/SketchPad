@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas{
+    border: 2px solid black;
+}
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.colbutton{
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    outline: none;
+}
+
+.widthrange{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: wheat;
+}
+
+.slider{
+    display: flex;
+    height: 50px;
+}
+
+.shapes{
+    display: flex;
+    background-color: teal;
+    justify-content: space-evenly;
+}
+
+.shape{
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+}
+
+.circleicon{
+    background: url('circle.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+.squareicon{
+    background: url('square.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+.rectangleicon{
+    background: url('rectangle.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+.triangleicon{
+    background: url('triangle.png');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
